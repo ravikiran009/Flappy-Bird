@@ -60,7 +60,7 @@ class Bird(pygame.sprite.Sprite):
 
 	def update(self):
 
-		if flappy.rect.bottom < 300 and flappy.rect.top > 0:
+		if self.rect.bottom < 300 and self.rect.top > 0:
 			#For Jumping and Gravity
 			if pygame.mouse.get_pressed()[0] == 1 and self.clicked == False and flying == True: 
 				self.clicked = True
